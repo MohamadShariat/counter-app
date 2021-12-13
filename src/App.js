@@ -1,12 +1,17 @@
 import React from "react";
-import "./App.css";
+
+import Navbar from "./components/Navbar";
 import Counters from "./components/Counters";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Counters />
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <main className="container">
+        <Counters />
+      </main>
+    </React.Fragment>
   );
 }
 
